@@ -1,9 +1,17 @@
 # Rest-Assured-Demo-Project
 
-# Intro
+## Intro
 
-The purpose of this project is to demonstrate my abilities in framework setup and test writing and implementation using Rest Assured. The tests will focus on automating various scenarios on a dummy SUT (a third party website specially created for this purpose).
+The purpose of this project is to demonstrate my abilities in framework setup and test writing and implementation using Rest Assured. The tests will focus on automating various scenarios on dummy APIs.
 
-# How To:
+## Pre-requirements:
 
-1.
+I used versions **v21.0.1** and **3.9.5** of Java and Maven respectively. You can use the same, later or a minimum version of Java 8.
+
+## Installation
+
+cd into rest-assured-demo folder and run `mvn install`.
+
+## Tests
+
+cd into rest-assured-demo folder and run `mvn test`.
