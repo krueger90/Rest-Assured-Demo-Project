@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import com.github.javafaker.Faker;
 import objects.booker.BookingDates;
+import objects.booker.PartialBooking;
 
 public class PartialBookingDataBuilder {
 

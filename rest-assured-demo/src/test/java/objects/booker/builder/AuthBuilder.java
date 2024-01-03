@@ -1,4 +1,6 @@
-package objects.booker;
+package objects.booker.builder;
+
+import objects.booker.AuthToken;
 
 public class AuthBuilder {
 

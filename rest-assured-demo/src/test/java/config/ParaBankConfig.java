@@ -1,5 +1,7 @@
 package config;
 
+import static org.hamcrest.Matchers.lessThan;
+
 import org.junit.jupiter.api.BeforeAll;
 
 import io.restassured.RestAssured;
@@ -13,16 +15,16 @@ public class ParaBankConfig {
     @BeforeAll
     public static void setup() {
         RestAssured.requestSpecification = new RequestSpecBuilder()
-                .setBaseUri("http://parabank.parasoft.com")
+                .setBaseUri("https://parabank.parasoft.com")
                 .setBasePath("/parabank/services/bank")
-                .setContentType("application/json")
-                .addHeader("Accept", "application/json")
+                .setContentType("application/xml")
+                .addHeader("Accept", "*/*")
                 .addFilter(new RequestLoggingFilter())
                 .addFilter(new ResponseLoggingFilter())
                 .build();
 
         RestAssured.responseSpecification = new ResponseSpecBuilder()
-                .expectStatusCode(200)
+                .expectResponseTime(lessThan(20000L))
                 .build();
     }
 }

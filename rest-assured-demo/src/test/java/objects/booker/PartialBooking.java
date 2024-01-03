@@ -1,8 +1,7 @@
-package objects.booker.builder;
+package objects.booker;
 
 import lombok.Builder;
 import lombok.Getter;
-import objects.booker.BookingDates;
 
 @Getter
 @Builder

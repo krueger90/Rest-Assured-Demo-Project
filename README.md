@@ -14,4 +14,4 @@ cd into rest-assured-demo folder and run `mvn install`.
 
 ## Tests
 
-cd into rest-assured-demo folder and run `mvn test`.
+cd into rest-assured-demo folder and run `mvn test` or if you want to run separately the test classes, `mvn test -Dtest="BookerTest"` or `mvn test -Dtest="ParaBankTest"`.
